@@ -1,0 +1,26 @@
+.banner {
+    width: 1240px;
+    height: 233px;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    @include centerElement;
+    background: url(../../assets/images/img_1.png) center/cover;
+    .banner__filter {
+        opacity: 30%;
+        border-radius: 25px;
+        position: absolute;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+    }
+    .banner__tagline {
+        color: $color-4;
+        font-size: 48px;
+        position: absolute;
+        text-align: center;
+        margin: auto;
+    }
+}

@@ -1,10 +1,21 @@
-import "../styles/App.css";
+import About from "../pages/About";
+import Error from "../pages/Error";
+import Home from "../pages/Home";
+import Housing from "../pages/Housing";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="kasa-title">
-      <h1>Hello Kasa</h1>;
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/housing" element={<Housing />}></Route>
+        {/* path="*" si l'url ne correspond à rien de déclaré au dessus */}
+        <Route path="*" element={<Error />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

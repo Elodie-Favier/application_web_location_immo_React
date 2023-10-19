@@ -1,0 +1,23 @@
+.error {
+    width: 900px;
+    height: auto;
+    margin: auto;
+    padding-top: 100px;
+    @include centerElement;
+
+    p {
+        margin-bottom: 100px;
+    }
+    a {
+        color: $color-1;
+    }
+    .error__404 {
+        font-size: 298px;
+    }
+    .error__message {
+        font-size: 36px;
+    }
+}
+.backToAcceuil {
+    font-size: 18px;
+}

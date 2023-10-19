@@ -1,0 +1,39 @@
+// @mixin rowContent {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+// }
+.card {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    margin-bottom: 55px;
+    border-radius: 10px;
+    background-color: $color-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .card__filter {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        position: absolute;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    }
+    .card__img {
+        object-fit: cover;
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+    }
+    .card__text {
+        color: $color-4;
+        font-size: 18px;
+        position: absolute;
+        text-align: left;
+        padding: 15px;
+        display: block;
+        justify-content: end;
+    }
+}

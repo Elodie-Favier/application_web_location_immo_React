@@ -1,0 +1,12 @@
+.footer {
+    width: 1440px;
+    height: 209px;
+    background-color: $color-3;
+    @include centerElement;
+    .footer__img {
+        padding: 10px;
+    }
+    .footer__text {
+        color: white;
+    }
+}

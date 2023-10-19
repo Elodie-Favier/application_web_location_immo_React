@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/font/Montserrat-Regular.ttf);
+}
+$font-1: "font-1", sans-serif;
+
+$color-1: #ff6060;
+$color-2: #f6f6f6;
+$color-3: black;
+$color-4: white;
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin centerElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-4;
+    font-family: $font-1;
+    color: $color-1;
+    margin: auto;
+    width: 1440px;
+}
+
+li {
+    list-style-type: none;
+}

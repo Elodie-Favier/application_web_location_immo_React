@@ -1,0 +1,21 @@
+.navigation {
+    width: 309px;
+    height: 34px;
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+    li {
+        width: 136px;
+        color: $color-1;
+        cursor: pointer;
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $color-1;
+    }
+}

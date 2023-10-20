@@ -1,0 +1,28 @@
+.collapse {
+    width: 1023px;
+    margin: auto;
+    margin-bottom: 25px;
+    .collapse__header {
+        height: 52px;
+        background-color: $color-1;
+        padding: 15px;
+        border-radius: 5px;
+        @include horizontalElement;
+    }
+    .collapse__title {
+        color: $color-4;
+        font-size: 26px;
+    }
+    .collapse__btn {
+        background: none;
+        border: none;
+    }
+    .collapse__content {
+        background-color: $color-2;
+        border-radius: 5px;
+        font-family: $font-1;
+        text-align: justify;
+        padding: 15px;
+        font-size: 16px;
+    }
+}

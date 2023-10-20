@@ -9,13 +9,12 @@
         width: 136px;
         color: $color-1;
         cursor: pointer;
-
-        &:active {
-            text-decoration: underline;
-        }
     }
     a {
         text-decoration: none;
         color: $color-1;
     }
+}
+.active {
+    text-decoration: underline;
 }

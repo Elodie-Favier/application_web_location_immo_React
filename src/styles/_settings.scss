@@ -19,6 +19,12 @@ $color-4: white;
     justify-content: center;
     align-items: center;
 }
+@mixin horizontalElement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 * {
     padding: 0;
     margin: 0;

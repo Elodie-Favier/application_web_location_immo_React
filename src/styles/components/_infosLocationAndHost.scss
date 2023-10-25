@@ -1,0 +1,17 @@
+.info {
+    display: flex;
+    flex-direction: row;
+
+    .info__localisation {
+        flex-direction: column;
+        width: 635px;
+        height: 77px;
+    }
+    .info__host {
+        width: 196px;
+        .info__host__identity {
+            flex-direction: row;
+            width: 167px;
+        }
+    }
+}

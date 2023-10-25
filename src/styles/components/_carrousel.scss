@@ -1,0 +1,16 @@
+.sheet__carrousel {
+    height: 415px;
+    border-radius: 25px;
+    position: relative;
+    .sheet__img {
+        object-fit: cover;
+    }
+    .sheet__arrows {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 1240px;
+        padding: 30px;
+        top: 30%;
+    }
+}

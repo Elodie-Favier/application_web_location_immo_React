@@ -10,4 +10,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 400px) {
+        width: 335px;
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding: 0;
+        background-color: $color-4;
+    }
 }

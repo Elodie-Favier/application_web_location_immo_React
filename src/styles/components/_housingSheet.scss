@@ -3,4 +3,7 @@
     margin: auto;
     height: auto;
     margin-top: 50px;
+    @media screen and (max-width: 400px) {
+        width: 375px;
+    }
 }

@@ -1,71 +1,72 @@
-.collapse {
-    width: 1023px;
+.collapse__rental {
+    width: 1240px;
     margin: auto;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     @media screen and (max-width: 400px) {
         width: 335px;
+        flex-direction: column;
+        margin-top: 15px;
     }
-    .collapse__header {
+    .collapse__bloc {
+        display: flex;
+        width: 582px;
+        flex-direction: column;
+        @media screen and (max-width: 400px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .collapse__rentalheader {
         height: 52px;
         background-color: $color-1;
         padding: 15px;
         border-radius: 5px;
         @include horizontalElement;
-        @media screen and (max-width: 400px) {
-            height: 30px;
-        }
     }
-    .collapse__title {
+    .collapse__rentaltitle {
         color: $color-4;
         font-size: 26px;
-        @media screen and (max-width: 400px) {
-            font-size: 13px;
-        }
     }
-    .collapse__btn {
+    .collapse__rentalbtn {
         background: none;
         border: none;
     }
-    .collapse__arrowup1 {
+    .collapse__arrowUp1 {
         @media screen and (max-width: 400px) {
             display: none;
         }
     }
-    .collapse__arrowup2 {
+    .collapse__arrowUp2 {
         display: none;
         @media screen and (max-width: 400px) {
             display: block;
         }
     }
-    .collapse__arrowdown1 {
+    .collapse__arrowDown1 {
         @media screen and (max-width: 400px) {
             display: none;
         }
     }
-    .collapse__arrow down1 {
+    .collapse__arrowDown2 {
         display: none;
         @media screen and (max-width: 400px) {
             display: block;
         }
     }
-    .collapse__content {
+    .collapse__rental__content {
         background-color: $color-2;
         border-radius: 5px;
         font-family: "Monserrat", sans-serif;
+        height: auto;
         text-align: justify;
         padding: 15px;
         font-size: 16px;
         @media screen and (max-width: 400px) {
             font-size: 12px;
-        }
-        .collapse__arrow--up1 {
-            display: block;
-            @media screen and (max-width: 400px) {
-                display: none;
-            }
-        }
-        .collapse__arrow--up2 {
-            display: none;
         }
     }
 }

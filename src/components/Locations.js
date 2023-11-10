@@ -5,8 +5,8 @@ import Cards from "./Cards";
 const Locations = () => {
   return (
     <div className="gallery">
-      {rentalList.map((rental) => (
-        <Cards key={rental.id} rental={rental} />
+      {rentalList.map((rental, index) => (
+        <Cards key={index} rental={rental} />
       ))}
     </div>
   );

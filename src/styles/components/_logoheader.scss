@@ -1,0 +1,17 @@
+.logo {
+    @media screen and (max-width: 400px) {
+        width: 145px;
+    }
+    .logo__mobile {
+        display: none;
+        @media screen and (max-width: 400px) {
+            display: block;
+        }
+    }
+    .logo__desk {
+        display: block;
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
+    }
+}

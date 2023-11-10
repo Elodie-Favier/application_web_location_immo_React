@@ -1,0 +1,147 @@
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 1240px;
+    @media screen and (max-width: 400px) {
+        flex-direction: column;
+        margin: auto;
+        width: 335px;
+    }
+
+    .info__rental {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        @media screen and (max-width: 400px) {
+            width: 335px;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+
+        .info__localisation {
+            flex-direction: column;
+            min-width: 635px;
+            height: 77px;
+            @media screen and (max-width: 400px) {
+                width: 335px;
+                height: auto;
+                min-width: 0;
+            }
+            h2 {
+                @media screen and (max-width: 400px) {
+                    font-size: 18px;
+                }
+            }
+            p {
+                @media screen and (max-width: 400px) {
+                    font-size: 14px;
+                }
+            }
+        }
+        .info__host {
+            width: 196px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            @media screen and (max-width: 400px) {
+                order: 2;
+                width: 100%;
+                flex-direction: row;
+                align-items: flex-start;
+                margin-top: 10px;
+            }
+
+            .info__host__identity {
+                flex-direction: row;
+                display: flex;
+                text-align: right;
+                width: 167px;
+                @media screen and (max-width: 400px) {
+                    width: 50%;
+                    height: auto;
+                    order: 2;
+                }
+                p {
+                    text-align: end;
+                    margin: 12px;
+                }
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50px;
+                }
+            }
+
+            .info__ratings {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 10px;
+                @media screen and (max-width: 400px) {
+                    order: 1;
+                    width: 50%;
+                    justify-content: flex-start;
+                    padding-top: 10px;
+                }
+                .ratings__bloc {
+                    @media screen and (max-width: 400px) {
+                        display: flex;
+                        align-items: baseline;
+                    }
+                }
+                .rating__star {
+                    margin: auto;
+                    width: 36px;
+                    @media screen and (max-width: 400px) {
+                        width: 18px;
+                        margin: 0;
+                    }
+                    img {
+                        background-color: yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    .info__details {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        margin-top: -25px;
+        justify-content: space-between;
+        @media screen and (max-width: 400px) {
+            order: 1;
+            width: 100%;
+        }
+        .details__tags {
+            display: flex;
+            min-width: 50%;
+            flex-direction: row;
+            @media screen and (max-width: 400px) {
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+            .tags {
+                min-width: 115px;
+                height: 25px;
+                color: $color-4;
+                padding: 0 10px;
+                margin-bottom: 25px;
+                margin-right: 10px;
+                text-align: center;
+                border-radius: 10px;
+                background-color: $color-1;
+                @media screen and (max-width: 400px) {
+                    font-size: 14px;
+                    height: 18px;
+                    min-width: 84px;
+                    margin-bottom: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

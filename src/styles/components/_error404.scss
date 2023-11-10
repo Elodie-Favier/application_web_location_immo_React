@@ -4,20 +4,37 @@
     margin: auto;
     padding-top: 100px;
     @include centerElement;
-
+    @media screen and (max-width: 400px) {
+        width: 375px;
+    }
+    .error__404 {
+        font-size: 298px;
+        @media screen and (max-width: 400px) {
+            width: 198px;
+            height: 99px;
+            font-size: 96px;
+            font-weight: 700;
+        }
+    }
+    .error__message {
+        font-size: 36px;
+        @media screen and (max-width: 400px) {
+            font-size: 18px;
+            width: 260px;
+            height: 52px;
+        }
+    }
     p {
         margin-bottom: 100px;
     }
     a {
         color: $color-1;
     }
-    .error__404 {
-        font-size: 298px;
-    }
-    .error__message {
-        font-size: 36px;
-    }
 }
 .backToAcceuil {
     font-size: 18px;
+    @media screen and (max-width: 400px) {
+        font-size: 14px;
+        width: 221px;
+    }
 }

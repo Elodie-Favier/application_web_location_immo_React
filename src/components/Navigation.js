@@ -6,23 +6,17 @@ const Navigation = () => {
       <ul className="navigation__ul">
         <NavLink
           to="/"
-          style={
-            ({ isActive }) => console.log(isActive)
-            // {
-            //   return { textDecoration: isActive ? "underline" : "none" };
-            // }
-          }
+          style={({ isActive }) => {
+            return { textDecoration: isActive ? "underline" : "none" };
+          }}
         >
           <li className="navigation__li">Accueil</li>
         </NavLink>
         <NavLink
-          to="about"
-          style={
-            ({ isActive }) => console.log(isActive)
-            // {
-            //   return { textDecoration: isActive ? "underline" : "none" };
-            // }
-          }
+          to="/about"
+          style={({ isActive }) => {
+            return { textDecoration: isActive ? "underline" : "none" };
+          }}
         >
           <li className="navigation__li">A propos</li>
         </NavLink>

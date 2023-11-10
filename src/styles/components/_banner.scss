@@ -6,8 +6,37 @@
     margin-top: 30px;
     margin-bottom: 50px;
     position: relative;
-    @include centerElement;
-    background: url(../../assets/images/img_1.png) center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 400px) {
+        width: 335px;
+        height: 111px;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    .bannerHome__img1 {
+        width: 100%;
+        height: 233px;
+        border-radius: 25px;
+        object-fit: cover;
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
+    }
+    .bannerHome__img2 {
+        display: none;
+        @media screen and (max-width: 400px) {
+            display: block;
+            height: 111px;
+            width: 100%;
+            height: 233px;
+            border-radius: 25px;
+            // object-fit: cover;
+        }
+    }
+
     .banner__filter {
         opacity: 30%;
         border-radius: 25px;
@@ -22,5 +51,14 @@
         position: absolute;
         text-align: center;
         margin: auto;
+        @media screen and (max-width: 400px) {
+            font-size: 24px;
+            text-align: left;
+            display: block;
+            width: 201px;
+            height: 48px;
+            top: 30%;
+            left: 5%;
+        }
     }
 }

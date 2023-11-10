@@ -2,11 +2,33 @@
     width: 1440px;
     height: 209px;
     background-color: $color-3;
+    @media screen and (max-width: 400px) {
+        width: 375px;
+        height: 209px;
+        margin: auto;
+    }
     @include centerElement;
-    .footer__img {
+    .footer__img1 {
         padding: 10px;
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
+    }
+    .footer__img2 {
+        display: none;
+        @media screen and (max-width: 400px) {
+            display: block;
+        }
     }
     .footer__text {
         color: white;
+        font-size: 24px;
+        @media screen and (max-width: 400px) {
+            font-size: 12px;
+            width: 134px;
+            height: 46px;
+            text-align: center;
+            padding: 10px;
+        }
     }
 }

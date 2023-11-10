@@ -13,6 +13,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    @media screen and (max-width: 400px) {
+        margin-bottom: 20px;
+        width: 335px;
+        height: 255px;
+    }
+    a {
+        display: contents;
+    }
     .card__filter {
         width: 100%;
         height: 100%;

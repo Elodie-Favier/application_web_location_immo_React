@@ -26,7 +26,7 @@ const CollapseAbout = () => {
   ];
 
   return (
-    <div className="collapse__rental">
+    <div className="collapse">
       {collapseData.map(({ title, content }) => (
         <CollapseAbout2 title={title} content={content} />
       ))}

@@ -1,25 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Carrousel = () => {
+const Carrousel = ({ rental }) => {
+  const [current, setCurrent] = useState(0);
+  const pictures = rental.pictures;
+  const length = pictures.length;
+  const currentNumber = current + 1;
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  // if (!Array.isArray(slides) || slides.length <= 0) {
+  //   return null;
+  // }
   return (
-    <div className="sheet__carrousel">
-      <img
-        className="sheet__img"
-        src="./img-test-carrousel.png"
-        alt="images de la location"
-      />
-      <div className="sheet__arrows">
+    <div className="slider">
+      <div className={length === 1 ? "displaynone" : "slider__arrows"}>
         <img
-          src="./big-arrow-forward.png"
+          src="/big-arrow-forward.png"
           alt="flèche vers gauche"
-          className="sheet__"
+          className="bigArrow"
+          onClick={prevSlide}
         />
         <img
-          src="./big-arrow-next.png"
+          src="/arrow-small_back.png"
+          alt="flèche vers gauche"
+          className="smallArrow"
+          onClick={prevSlide}
+        />
+        <img
+          src="/big-arrow-next.png"
           alt="flèche vers droite"
-          className="sheet__"
+          className="bigArrow"
+          onClick={nextSlide}
+        />
+        <img
+          src="/arrow-small_next.png"
+          alt="flèche vers droite"
+          className="smallArrow"
+          onClick={nextSlide}
         />
       </div>
+      <div className={length === 1 ? "displaynone" : "slider__number"}>
+        <p>
+          {currentNumber} / {length}
+        </p>
+      </div>
+      {pictures.map((picture, index) => {
+        return (
+          <div
+            className={index === current ? "slide active" : "slide"}
+            key={index}
+          >
+            {index === current && (
+              <img src={picture} alt="logements" className="slider__img" />
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 };

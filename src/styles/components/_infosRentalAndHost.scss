@@ -48,9 +48,10 @@
             align-items: flex-end;
             @media screen and (max-width: 400px) {
                 order: 2;
-                width: 100%;
+                width: 335px;
                 flex-direction: row;
                 align-items: flex-start;
+                justify-content: space-between;
                 margin-top: 10px;
             }
 
@@ -60,46 +61,29 @@
                 text-align: right;
                 width: 167px;
                 @media screen and (max-width: 400px) {
-                    width: 50%;
+                    width: 135px;
                     height: auto;
                     order: 2;
+                    justify-content: flex-end;
                 }
                 p {
                     text-align: end;
                     margin: 12px;
+                    @media screen and (max-width: 400px) {
+                        font-size: 12px;
+                        width: 60px;
+                        padding-top: 5px;
+                        margin: 0;
+                        padding-right: 15px;
+                    }
                 }
                 img {
                     width: 64px;
                     height: 64px;
                     border-radius: 50px;
-                }
-            }
-
-            .info__ratings {
-                display: flex;
-                justify-content: flex-end;
-                margin-top: 10px;
-                @media screen and (max-width: 400px) {
-                    order: 1;
-                    width: 50%;
-                    justify-content: flex-start;
-                    padding-top: 10px;
-                }
-                .ratings__bloc {
                     @media screen and (max-width: 400px) {
-                        display: flex;
-                        align-items: baseline;
-                    }
-                }
-                .rating__star {
-                    margin: auto;
-                    width: 36px;
-                    @media screen and (max-width: 400px) {
-                        width: 18px;
-                        margin: 0;
-                    }
-                    img {
-                        background-color: yellow;
+                        width: 32px;
+                        height: 32px;
                     }
                 }
             }

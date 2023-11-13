@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import Error404 from "../components/Error404";
 import CollapseRentalEquipment from "../components/CollapseRentalEquipment";
 import CollapseRentalDescription from "../components/CollapseRentalDescription";
+// import Rating from "../components/Rating";
 
 const Housing = () => {
   const { id } = useParams();
@@ -25,6 +26,9 @@ const Housing = () => {
             .map((rental, index) => (
               <div>
                 <InfosRentalAndHost key={index} rental={rental} />
+                {/* <div className="info__ratings">
+                  <Rating rental={rental} key={index} />
+                </div> */}
                 <div className="collapse__rental">
                   <CollapseRentalDescription key={index} rental={rental} />
                   <CollapseRentalEquipment key={index} rental={rental} />

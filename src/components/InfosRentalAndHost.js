@@ -1,17 +1,9 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faStar } from "@fortawesome/free-solid-svg-icons";
-
-// const element = <FontAwesomeIcon icon={faStar} />
+import Rating from "./Rating";
 
 const InfosRentalAndHost = ({ rental }) => {
   const rentalTags = rental.tags;
-  // let selectedStars = rental.rating;
-  // selectedStars = parseInt(selectedStars);
-  // console.log(selectedStars);
-  // // const [stars, SetStars] = useState();
-  // console.log(selectedStars);
-  // const stars  =
+  const index = 0;
 
   return (
     <div className="info">
@@ -26,33 +18,7 @@ const InfosRentalAndHost = ({ rental }) => {
             <img src={rental.host.picture} alt="avatar du propriétaire" />
           </div>
           <div className="info__ratings">
-            <div className="ratings__bloc">
-              <img
-                src="/star.png"
-                className="rating__star rating__star--inactive"
-                alt="etoile"
-              />
-              <img
-                src="/star.png"
-                className="rating__star rating__star--inactive"
-                alt="etoile"
-              />
-              <img
-                src="/star.png"
-                className="rating__star rating__star--inactive"
-                alt="etoile"
-              />
-              <img
-                src="/star.png"
-                className="rating__star rating__star--inactive"
-                alt="etoile"
-              />
-              <img
-                src="/star.png"
-                className="rating__star rating__star--inactive"
-                alt="etoile"
-              />
-            </div>
+            <Rating rental={rental} key={index} />
           </div>
         </div>
 

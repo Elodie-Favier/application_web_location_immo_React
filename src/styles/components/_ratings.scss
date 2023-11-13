@@ -1,0 +1,25 @@
+.info__ratings {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    @media screen and (max-width: 400px) {
+        order: 1;
+        width: 50%;
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+    .ratings__bloc {
+        @media screen and (max-width: 400px) {
+            display: flex;
+            align-items: baseline;
+        }
+    }
+    .rating__star {
+        margin: auto;
+        width: 36px;
+        @media screen and (max-width: 400px) {
+            width: 18px;
+            margin: 0;
+        }
+    }
+}

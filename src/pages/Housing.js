@@ -20,23 +20,21 @@ const Housing = () => {
         <Header />
         <div className="sheet">
           <Carrousel rental={rental} />
-
           {rentalList
             .filter((rental) => rental.id.includes(id))
             .map((rental, index) => (
               <div>
                 <InfosRentalAndHost key={index} rental={rental} />
-                {/* <div className="info__ratings">
-                  <Rating rental={rental} key={index} />
-                </div> */}
+
                 <div className="collapse__rental">
-                  <CollapseRentalDescription key={index} rental={rental} />
-                  <CollapseRentalEquipment key={index} rental={rental} />
+                  <CollapseRentalDescription
+                    key={rental.description}
+                    rental={rental}
+                  />
+                  <CollapseRentalEquipment rental={rental} />
                 </div>
               </div>
             ))}
-
-          <div></div>
         </div>
         <Footer />
       </div>

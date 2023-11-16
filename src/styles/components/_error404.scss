@@ -3,12 +3,13 @@
     height: auto;
     margin: auto;
     padding-top: 100px;
-    @include centerElement;
+    @include verticalItemContentCenterElement;
     @media screen and (max-width: 400px) {
-        width: 375px;
+        width: 335px;
     }
     .error__404 {
-        font-size: 298px;
+        font-size: 288px;
+        font-weight: 700;
         @media screen and (max-width: 400px) {
             width: 198px;
             height: 99px;
@@ -21,6 +22,7 @@
         @media screen and (max-width: 400px) {
             font-size: 18px;
             width: 260px;
+            text-align: center;
             height: 52px;
         }
     }

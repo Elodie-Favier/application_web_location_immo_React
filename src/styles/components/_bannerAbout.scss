@@ -6,7 +6,7 @@
     margin-top: 30px;
     margin-bottom: 50px;
     position: relative;
-    @include centerElement;
+    @include verticalItemContentCenterElement;
     @media screen and (max-width: 400px) {
         width: 335px;
         height: 111px;

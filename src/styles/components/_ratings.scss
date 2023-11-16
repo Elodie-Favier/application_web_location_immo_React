@@ -16,9 +16,11 @@
     }
     .rating__star {
         margin: auto;
-        width: 36px;
+        width: 24px;
+        height: 24px;
         @media screen and (max-width: 400px) {
-            width: 18px;
+            width: 13px;
+            height: 13px;
             margin: 0;
         }
     }

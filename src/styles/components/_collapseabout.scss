@@ -10,7 +10,7 @@
         background-color: $color-1;
         padding: 15px;
         border-radius: 5px;
-        @include horizontalElement;
+        @include rowCenterBetwwenElement;
         @media screen and (max-width: 400px) {
             height: 30px;
         }
@@ -42,7 +42,7 @@
             display: none;
         }
     }
-    .collapse__arrow down1 {
+    .collapse__arrowdown2 {
         display: none;
         @media screen and (max-width: 400px) {
             display: block;
@@ -51,7 +51,7 @@
     .collapse__content {
         background-color: $color-2;
         border-radius: 5px;
-        font-family: "Monserrat", sans-serif;
+        font-family: $font;
         text-align: justify;
         padding: 15px;
         font-size: 16px;

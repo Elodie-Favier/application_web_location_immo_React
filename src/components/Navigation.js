@@ -18,7 +18,7 @@ const Navigation = () => {
             return { textDecoration: isActive ? "underline" : "none" };
           }}
         >
-          <li className="navigation__li">A propos</li>
+          <li className="navigation__li">A Propos</li>
         </NavLink>
       </ul>
     </div>

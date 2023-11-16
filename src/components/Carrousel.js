@@ -13,9 +13,6 @@ const Carrousel = ({ rental }) => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  // if (!Array.isArray(slides) || slides.length <= 0) {
-  //   return null;
-  // }
   return (
     <div className="slider">
       <div className={length === 1 ? "displaynone" : "slider__arrows"}>
@@ -53,7 +50,7 @@ const Carrousel = ({ rental }) => {
         return (
           <div
             className={index === current ? "slide active" : "slide"}
-            key={index}
+            key={`${picture}-${index}`}
           >
             {index === current && (
               <img src={picture} alt="logements" className="slider__img" />

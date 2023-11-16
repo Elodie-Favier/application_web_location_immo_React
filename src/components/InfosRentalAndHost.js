@@ -3,7 +3,7 @@ import Rating from "./Rating";
 
 const InfosRentalAndHost = ({ rental }) => {
   const rentalTags = rental.tags;
-  const index = 0;
+  // const index = 0;
 
   return (
     <div className="info">
@@ -18,15 +18,19 @@ const InfosRentalAndHost = ({ rental }) => {
             <img src={rental.host.picture} alt="avatar du propriétaire" />
           </div>
           <div className="info__ratings">
-            <Rating rental={rental} key={index} />
+            <Rating rental={rental} />
           </div>
         </div>
 
         <div className="info__details">
           {
             <div className="details__tags">
-              {rentalTags.map((tag) => {
-                return <p className="tags">{tag}</p>;
+              {rentalTags.map((tag, index) => {
+                return (
+                  <p key={`${tag}-${index}`} className="tags">
+                    {tag}
+                  </p>
+                );
               })}
             </div>
           }

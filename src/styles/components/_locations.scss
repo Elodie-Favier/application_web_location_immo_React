@@ -6,10 +6,7 @@
     border-radius: 10px;
     background-color: $color-2;
     padding: 55px 55px 0 55px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include rowWrapBetweenElement;
     @media screen and (max-width: 400px) {
         width: 335px;
         flex-direction: column;

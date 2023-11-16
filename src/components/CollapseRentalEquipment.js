@@ -47,7 +47,7 @@ const CollapseRentalEquipment = ({ rental }) => {
           {
             <div>
               {equipments.map((equip, index) => {
-                return <ul key={index}>{equip}</ul>;
+                return <ul key={`${equip}-${index}`}>{equip}</ul>;
               })}
             </div>
           }

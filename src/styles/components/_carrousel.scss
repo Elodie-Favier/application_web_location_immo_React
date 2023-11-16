@@ -4,7 +4,6 @@
     @media screen and (max-width: 400px) {
         width: 335px;
         height: 255px;
-
         margin: auto;
     }
     .slider__img {
@@ -62,13 +61,3 @@
 .displaynone {
     display: none;
 }
-// .slide {
-//     opacity: 0.7;
-//     transition-duration: 1s ease;
-// }
-
-// .slide.active {
-//     opacity: 1;
-//     transition-duration: 1s;
-//     transform: scale(1.08);
-// }

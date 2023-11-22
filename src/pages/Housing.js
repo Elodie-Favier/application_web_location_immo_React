@@ -19,7 +19,7 @@ const Housing = () => {
       <div>
         <Header />
         <div className="sheet">
-          <Carrousel rental={rental} />
+          <Carrousel key={rental.pictures} rental={rental} />
           {rentalList
             .filter((rental) => rental.id.includes(id))
             .map((rental, index) => (

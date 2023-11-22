@@ -1,71 +1,83 @@
 .collapse {
-    width: 1023px;
     margin: auto;
-    margin-bottom: 25px;
     @media screen and (max-width: 400px) {
-        width: 335px;
+        margin-bottom: 20px;
     }
-    .collapse__header {
-        height: 52px;
-        background-color: $color-1;
-        padding: 15px;
-        border-radius: 5px;
-        @include rowCenterBetwwenElement;
+    .collapse_bloc {
+        width: 1023px;
+        margin: auto;
+        margin-bottom: 25px;
         @media screen and (max-width: 400px) {
-            height: 30px;
+            width: 335px;
+            margin-bottom: 20px;
         }
-    }
-    .collapse__title {
-        color: $color-4;
-        font-size: 26px;
-        @media screen and (max-width: 400px) {
-            font-size: 13px;
+
+        .collapse__header {
+            height: 52px;
+            background-color: $color-1;
+            padding: 15px;
+            border-radius: 5px;
+            @include rowCenterBetwwenElement;
+            @media screen and (max-width: 400px) {
+                height: 30px;
+            }
         }
-    }
-    .collapse__btn {
-        background: none;
-        border: none;
-    }
-    .collapse__arrowup1 {
-        @media screen and (max-width: 400px) {
-            display: none;
+        .collapse__title {
+            color: $color-4;
+            font-size: 24px;
+            @media screen and (max-width: 400px) {
+                font-size: 13px;
+            }
         }
-    }
-    .collapse__arrowup2 {
-        display: none;
-        @media screen and (max-width: 400px) {
-            display: block;
+        .collapse__btn {
+            background: none;
+            border: none;
         }
-    }
-    .collapse__arrowdown1 {
-        @media screen and (max-width: 400px) {
-            display: none;
-        }
-    }
-    .collapse__arrowdown2 {
-        display: none;
-        @media screen and (max-width: 400px) {
-            display: block;
-        }
-    }
-    .collapse__content {
-        background-color: $color-2;
-        border-radius: 5px;
-        font-family: $font;
-        text-align: justify;
-        padding: 15px;
-        font-size: 16px;
-        @media screen and (max-width: 400px) {
-            font-size: 12px;
-        }
-        .collapse__arrow--up1 {
-            display: block;
+        .collapse__arrowup1 {
             @media screen and (max-width: 400px) {
                 display: none;
             }
         }
-        .collapse__arrow--up2 {
+        .collapse__arrowup2 {
             display: none;
+            @media screen and (max-width: 400px) {
+                display: block;
+            }
+        }
+        .collapse__arrowdown1 {
+            @media screen and (max-width: 400px) {
+                display: none;
+            }
+        }
+        .collapse__arrowdown2 {
+            display: none;
+            @media screen and (max-width: 400px) {
+                display: block;
+            }
+        }
+        .collapse__content {
+            background-color: $color-2;
+            border-radius: 5px;
+            font-family: $font;
+            text-align: justify;
+            padding: 20px 15px 15px;
+            position: relative;
+            bottom: 10px;
+            z-index: -1;
+            font-size: 18px;
+            font-weight: 400;
+            @media screen and (max-width: 400px) {
+                font-size: 12px;
+            }
+            .collapse__arrow--up1 {
+                display: block;
+                @media screen and (max-width: 400px) {
+                    display: none;
+                }
+            }
+            .collapse__arrow--up2 {
+                display: none;
+            }
         }
     }
 }

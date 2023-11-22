@@ -9,14 +9,19 @@
         padding-top: 10px;
     }
     .ratings__bloc {
+        width: 196px;
+        height: 36px;
+        display: flex;
         @media screen and (max-width: 400px) {
-            display: flex;
+            width: 98px;
+            height: 18px;
+            justify-content: space-around;
             align-items: baseline;
         }
     }
     .rating__star {
         margin: auto;
-        width: 24px;
+        width: 24.75px;
         height: 24px;
         @media screen and (max-width: 400px) {
             width: 13px;

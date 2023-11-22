@@ -41,7 +41,7 @@ const CollapseRentalDescription = ({ rental }) => {
           )}
         </button>
       </div>
-      <div className="collapse_rental__bloc"></div>
+
       {isActive && (
         <div className="collapse__rental__content">{rental.description}</div>
       )}

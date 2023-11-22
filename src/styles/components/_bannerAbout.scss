@@ -4,12 +4,14 @@
     border-radius: 25px;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     position: relative;
     @include verticalItemContentCenterElement;
     @media screen and (max-width: 400px) {
         width: 335px;
         height: 111px;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
 }
 .bannerAbout__img1 {

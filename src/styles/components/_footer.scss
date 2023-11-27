@@ -12,15 +12,6 @@
 
     .footer__img1 {
         padding: 10px;
-        @media screen and (max-width: 400px) {
-            display: none;
-        }
-    }
-    .footer__img2 {
-        display: none;
-        @media screen and (max-width: 400px) {
-            display: block;
-        }
     }
     .footer__text {
         color: white;

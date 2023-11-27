@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import InfosRentalAndHost from "../components/InfosRentalAndHost";
 import Carrousel from "../components/Carrousel";
 import { rentalList } from "../Data/rentalList";
@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Error404 from "../components/Error404";
 import CollapseRentalEquipment from "../components/CollapseRentalEquipment";
 import CollapseRentalDescription from "../components/CollapseRentalDescription";
-// import Rating from "../components/Rating";
 
 const Housing = () => {
   const { id } = useParams();
@@ -19,21 +18,24 @@ const Housing = () => {
       <div>
         <Header />
         <div className="sheet">
-          <Carrousel key={rental.pictures} rental={rental} />
           {rentalList
             .filter((rental) => rental.id.includes(id))
-            .map((rental, index) => (
-              <div>
-                <InfosRentalAndHost key={index} rental={rental} />
+            .map((rental) => (
+              <Fragment key={rental.id}>
+                <Carrousel key={rental.pictures} rental={rental} />
+                <InfosRentalAndHost key={rental.id} rental={rental} />
 
                 <div className="collapse__rental">
                   <CollapseRentalDescription
                     key={rental.description}
                     rental={rental}
                   />
-                  <CollapseRentalEquipment rental={rental} />
+                  <CollapseRentalEquipment
+                    key={rental.equipments}
+                    rental={rental}
+                  />
                 </div>
-              </div>
+              </Fragment>
             ))}
         </div>
         <Footer />

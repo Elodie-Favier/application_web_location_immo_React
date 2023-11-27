@@ -4,12 +4,16 @@
     }
     .logo__mobile {
         display: none;
+        width: 145px;
+        height: 46px;
         @media screen and (max-width: 400px) {
             display: block;
         }
     }
     .logo__desk {
         display: block;
+        width: 210px;
+        height: 68px;
         @media screen and (max-width: 400px) {
             display: none;
         }

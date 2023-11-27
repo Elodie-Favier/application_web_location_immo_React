@@ -2,7 +2,6 @@ import About from "../pages/About";
 import Error from "../pages/Error";
 import Home from "../pages/Home";
 import Housing from "../pages/Housing";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

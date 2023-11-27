@@ -25,9 +25,9 @@ const InfosRentalAndHost = ({ rental }) => {
         <div className="info__details">
           {
             <div className="details__tags">
-              {rentalTags.map((tag, index) => {
+              {rentalTags.map((tag) => {
                 return (
-                  <p key={`${tag}-${index}`} className="tags">
+                  <p key={tag} className="tags">
                     {tag}
                   </p>
                 );
